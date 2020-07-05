@@ -35,60 +35,56 @@ public class testcases
 	static WebDriver driver;
 	static ArrayList<ArrayList<String>> arr;
 	
-	ExtentReports extent = ExtentReport.getReportObject();
-	ExtentTest test;
-	Timestamp ts;
-	
 	@BeforeMethod
 	public void beforeMethod() throws IOException
 	{
 		
-		Date date= new Date();
-		long time = date.getTime();
-		ts = new Timestamp(time);
-		
-		
-		initializeConfigurations c = new initializeConfigurations();
+		initializeConfigurations c = new initializeConfigurations(); // Initialize the Configuration File
 		propC = c.returnConfiguration();
 		
-		initializeDriver i= new initializeDriver();
+		initializeDriver i= new initializeDriver(); // Initialize the WebDriver
 		driver = i.returnDriver();
-		driver.manage().window().maximize();
+		driver.manage().window().maximize(); // Maximize the Window
 	}
 	
 	@Test
-	public void testcase1() throws IOException, InterruptedException
+	public void addProductToCart() throws IOException, InterruptedException
 	{
 
-		test = extent.createTest("Validate if Product is added in the Cart" + " "+ ts);
+		//test = extent.createTest("Validate if Product is added in the Cart" + " "+ ts); // Create the Testcase name
 		
-		driver.get(propC.getProperty("URL"));
+		driver.get(propC.getProperty("URL"));// Step1: Navigate to the URL
+		
 		homePage h = new homePage(driver);
-		h.clickOnPopularItems();
+		h.clickOnPopularItems(); // Step2: Click on the Popular icon 
 		map = h.returnAllPricings();
-		h.addSpecificProductToCart(new returnLowestPrice().returnTheLowestPriceIndexFromSet(map));
-		h.proceedToCheckout();
 		
-		new takeScreenshot(driver);
+		h.addSpecificProductToCart(new returnLowestPrice()
+				.returnTheLowestPriceIndexFromSet(map));// Step3: Add the item with the lowest Price
+		h.proceedToCheckout(); // Step4: Click  on the Checkout and navigate to Cart
+		
+		new takeScreenshot(driver); // Step5: Take the screenshot on the Cart page
 		
 		cartPage cp = new cartPage(driver);
-		String quantity = cp.getProductQuantity();
+		String quantity = cp.getProductQuantity();// Step 6: Get the quantity of the items added
 		
-		Assert.assertTrue(quantity.equals("1"));
+		Assert.assertTrue(quantity.equals("1"));// Step7: Validate that the quantity of the item added is 1
 	}
 
 	@Test
-	public void testcase2() throws IOException, InterruptedException
+	public void validateDiscountPrice() throws IOException, InterruptedException
 	{
-		test = extent.createTest("Validate if Discounted Price is correct" + " "+ ts);
+		//test = extent.createTest("Validate if Discounted Price is correct" + " "+ ts);// Create the Testcase name
 		
 		
-		driver.get(propC.getProperty("URL"));
+		driver.get(propC.getProperty("URL")); // Step1: Navigate to the URL
+		
 		homePage h = new homePage(driver);
-		h.clickOnPopularItems();
-		arr = h.returnDiscountedPricings();
+		h.clickOnPopularItems(); //Step2: Click on the Popular icon 
+		arr = h.returnDiscountedPricings(); //Step3: Get all the prices with the discount on it
 		
-		checkIfDiscountedPricesAreCorrect c = new checkIfDiscountedPricesAreCorrect();
+		//Step4: Check if the discounted prices are computed correctly
+		checkIfDiscountedPricesAreCorrect c = new checkIfDiscountedPricesAreCorrect(); 
 		Set<String> result1 = c.checkForDiscountedPrices(arr);
 		Assert.assertTrue(!result1.contains("Incorrect"));
 	}
@@ -98,20 +94,5 @@ public class testcases
 	public void afterMethod(ITestResult result) 
 	{
 		driver.close();
-		
-		if(result.getStatus() ==  ITestResult.SUCCESS)
-		{
-			test.log(Status.PASS, "PASSED");
-		}
-		if(result.getStatus() ==  ITestResult.FAILURE)
-		{
-			test.log(Status.PASS, "FAILED");
-		}
-		if(result.getStatus() ==  ITestResult.SKIP)
-		{
-			test.log(Status.PASS, "SKIPPED");
-		}
-
-		extent.flush();
 	}
 }

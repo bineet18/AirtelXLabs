@@ -9,13 +9,7 @@ public class ExtentReport
 {
 	static ExtentReports extent;
 	static Properties propD;
-	static String testcaseName1;
-	
-	public void sendTestcaseName(String testcaseName)
-	{
-		testcaseName1 = testcaseName;		
-	}
-	
+
 	public static ExtentReports getReportObject()
 	{
 		
@@ -24,7 +18,7 @@ public class ExtentReport
 		
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(path);
 		reporter.setAppendExisting(true);
-		reporter.config().setReportName("UI Automation Results");
+		reporter.config().setReportName("AirtelX SDET Testcases");
 		reporter.config().setDocumentTitle("Test Results");
 		
 		extent.attachReporter(reporter);
@@ -32,11 +26,4 @@ public class ExtentReport
 		
 		return extent;
 	}
-	
-	public static String getTestcasename()
-	{
-		return testcaseName1;
-	}
-	
-	
 }

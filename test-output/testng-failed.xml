@@ -8,8 +8,9 @@
     <classes>
       <class name="SDETExercise.testcases">
         <methods>
+          <include name="validateDiscountPrice"/>
           <include name="beforeMethod"/>
-          <include name="testcase2"/>
+          <include name="addProductToCart"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- SDETExercise.testcases -->

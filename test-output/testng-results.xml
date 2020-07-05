@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="25146" started-at="2020-07-05T11:21:21 IST" finished-at="2020-07-05T11:21:46 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="25146" started-at="2020-07-05T11:21:21 IST" finished-at="2020-07-05T11:21:46 IST">
+      <class name="SDETExercise.testcases">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SDETExercise.testcases@1198b989]" name="beforeMethod" is-config="true" duration-ms="2242" started-at="2020-07-05T11:21:21 IST" finished-at="2020-07-05T11:21:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:SDETExercise.testcases@1198b989]" name="testcase1" duration-ms="14604" started-at="2020-07-05T11:21:24 IST" finished-at="2020-07-05T11:21:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:SDETExercise.testcases@1198b989]" name="afterMethod" is-config="true" duration-ms="387" started-at="2020-07-05T11:21:38 IST" finished-at="2020-07-05T11:21:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase1 status=SUCCESS method=testcases.testcase1()[pri:0, instance:SDETExercise.testcases@1198b989] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SDETExercise.testcases@1198b989]" name="beforeMethod" is-config="true" duration-ms="1302" started-at="2020-07-05T11:21:39 IST" finished-at="2020-07-05T11:21:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase2()[pri:0, instance:SDETExercise.testcases@1198b989]" name="testcase2" duration-ms="6425" started-at="2020-07-05T11:21:40 IST" finished-at="2020-07-05T11:21:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:SDETExercise.testcases@1198b989]" name="afterMethod" is-config="true" duration-ms="150" started-at="2020-07-05T11:21:46 IST" finished-at="2020-07-05T11:21:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase2 status=SUCCESS method=testcases.testcase2()[pri:0, instance:SDETExercise.testcases@1198b989] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- SDETExercise.testcases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

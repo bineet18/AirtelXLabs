@@ -90,7 +90,6 @@ public class testcases
 		
 		checkIfDiscountedPricesAreCorrect c = new checkIfDiscountedPricesAreCorrect();
 		Set<String> result1 = c.checkForDiscountedPrices(arr);
-		System.out.println("ABCD12345");
 		Assert.assertTrue(!result1.contains("Incorrect"));
 	}
 

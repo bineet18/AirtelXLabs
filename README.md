@@ -7,4 +7,4 @@
 5. Run the testng.xml file from the Eclipse
 6. The Testcases are present in the SDETExercise.testcases file
 7. The screenshot is present in the Screenshot.png file in the Project folder
-8. The Reports and Logs are present 
+8. The Reports and Logs are present in Project Folder --> Reports --> index.html. Open it in Google Chrome

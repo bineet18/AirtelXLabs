@@ -8,6 +8,8 @@ import java.util.TreeMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import operations.clickOnSpecificElement_ActionClass;
 import operations.moveToSpecificElement;
@@ -87,7 +89,10 @@ public class homePage extends initializeXpaths
 	
 	public void proceedToCheckout() throws InterruptedException, IOException
 	{
-		WebElement e1 = driver.findElement(By.xpath(propX.getProperty("proceedToCheckout")));Thread.sleep(4000);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement e1;
+		e1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(propX.getProperty("proceedToCheckout"))));
+
 		new moveToSpecificElement(driver,e1);
 		new clickOnSpecificElement_ActionClass(driver, e1);
 	}

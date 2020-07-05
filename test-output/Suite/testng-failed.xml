@@ -8,7 +8,6 @@
     <classes>
       <class name="SDETExercise.testcases">
         <methods>
-          <include name="validateDiscountPrice"/>
           <include name="beforeMethod"/>
           <include name="addProductToCart"/>
           <include name="afterMethod"/>

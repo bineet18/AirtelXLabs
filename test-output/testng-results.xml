@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40143" started-at="2020-07-05T12:34:06 IST" finished-at="2020-07-05T12:34:47 IST">
+  <suite name="Suite" duration-ms="33693" started-at="2020-07-05T12:43:01 IST" finished-at="2020-07-05T12:43:34 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="40143" started-at="2020-07-05T12:34:06 IST" finished-at="2020-07-05T12:34:47 IST">
+    <test name="Test" duration-ms="33693" started-at="2020-07-05T12:43:01 IST" finished-at="2020-07-05T12:43:34 IST">
       <class name="SDETExercise.testcases">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SDETExercise.testcases@add0edd]" name="beforeMethod" is-config="true" duration-ms="2944" started-at="2020-07-05T12:34:06 IST" finished-at="2020-07-05T12:34:09 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SDETExercise.testcases@add0edd]" name="beforeMethod" is-config="true" duration-ms="2580" started-at="2020-07-05T12:43:01 IST" finished-at="2020-07-05T12:43:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addProductToCart()[pri:0, instance:SDETExercise.testcases@add0edd]" name="addProductToCart" duration-ms="25161" started-at="2020-07-05T12:34:09 IST" finished-at="2020-07-05T12:34:35 IST">
+        <test-method status="PASS" signature="addProductToCart()[pri:0, instance:SDETExercise.testcases@add0edd]" name="addProductToCart" duration-ms="14808" started-at="2020-07-05T12:43:03 IST" finished-at="2020-07-05T12:43:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:SDETExercise.testcases@add0edd]" name="afterMethod" is-config="true" duration-ms="95" started-at="2020-07-05T12:34:35 IST" finished-at="2020-07-05T12:34:35 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:SDETExercise.testcases@add0edd]" name="afterMethod" is-config="true" duration-ms="4349" started-at="2020-07-05T12:43:18 IST" finished-at="2020-07-05T12:43:22 IST">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SDETExercise.testcases@add0edd]" name="beforeMethod" is-config="true" duration-ms="1618" started-at="2020-07-05T12:34:35 IST" finished-at="2020-07-05T12:34:36 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SDETExercise.testcases@add0edd]" name="beforeMethod" is-config="true" duration-ms="1572" started-at="2020-07-05T12:43:22 IST" finished-at="2020-07-05T12:43:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateDiscountPrice()[pri:0, instance:SDETExercise.testcases@add0edd]" name="validateDiscountPrice" duration-ms="10167" started-at="2020-07-05T12:34:36 IST" finished-at="2020-07-05T12:34:46 IST">
+        <test-method status="PASS" signature="validateDiscountPrice()[pri:0, instance:SDETExercise.testcases@add0edd]" name="validateDiscountPrice" duration-ms="10196" started-at="2020-07-05T12:43:24 IST" finished-at="2020-07-05T12:43:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDiscountPrice -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:SDETExercise.testcases@add0edd]" name="afterMethod" is-config="true" duration-ms="112" started-at="2020-07-05T12:34:46 IST" finished-at="2020-07-05T12:34:47 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:SDETExercise.testcases@add0edd]" name="afterMethod" is-config="true" duration-ms="128" started-at="2020-07-05T12:43:34 IST" finished-at="2020-07-05T12:43:34 IST">
           <params>
             <param index="0">
               <value>

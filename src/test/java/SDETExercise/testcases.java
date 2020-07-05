@@ -1,9 +1,7 @@
 package SDETExercise;
 
 import java.io.IOException;
-import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Properties;
 import java.util.Set;
 import java.util.TreeMap;
@@ -15,10 +13,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-
 import operations.checkIfDiscountedPricesAreCorrect;
 import operations.returnLowestPrice;
 import operations.takeScreenshot;
@@ -26,7 +20,6 @@ import pages.cartPage;
 import pages.homePage;
 import properties.initializeConfigurations;
 import properties.initializeDriver;
-import reportsAndListeners.ExtentReport;
 
 public class testcases 
 {
